@@ -2,9 +2,6 @@
 
 A high-performance multithreaded application demonstrating CPU-bound concurrency through brute-force password cracking using systematic key space partitioning.
 
-![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)
-![Threading](https://img.shields.io/badge/threading-pthread-green.svg)
-![License](https://img.shields.io/badge/license-MIT-orange.svg)
 
 ## 📋 Overview
 
@@ -263,32 +260,3 @@ Tested on Intel Core i7-9700K (8 cores), 3.6 GHz:
 
 *Results vary based on CPU, compiler optimizations, and target password position*
 
-## 🛡️ Security Notes
-
-⚠️ **This is an educational project demonstrating concurrent programming concepts.**
-
-- The simple hash function is NOT cryptographically secure
-- Real password cracking requires cryptographic hash functions (bcrypt, scrypt, Argon2)
-- Modern systems use salting, key stretching, and other protections
-- Never use this for unauthorized access attempts
-
-## 🤝 Contributing
-
-Contributions are welcome! Areas for improvement:
-
-- [ ] Support for custom character sets via command line
-- [ ] Integration with real hash algorithms (OpenSSL)
-- [ ] Progress bar for long-running searches
-- [ ] Save/resume capability for interrupted searches
-- [ ] GPU acceleration using CUDA/OpenCL
-- [ ] Dictionary attack mode
-- [ ] Distributed computing across multiple machines
-
-
-## 📚 Learning Resources
-
-- [C++ Concurrency in Action](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition) by Anthony Williams
-- [Threading Building Blocks](https://github.com/oneapi-src/oneTBB)
-- [C++ std::thread documentation](https://en.cppreference.com/w/cpp/thread/thread)
-- [Mutex and Lock Guards](https://en.cppreference.com/w/cpp/thread/mutex)
-- [Atomic Operations](https://en.cppreference.com/w/cpp/atomic/atomic)
